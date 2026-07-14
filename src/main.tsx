@@ -8,24 +8,25 @@ const domain = import.meta.env.VITE_AUTH0_DOMAIN
 const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID
 const audience = import.meta.env.VITE_AUTH0_AUDIENCE
 
+const root = document.getElementById('root')!
+
 if (!domain || !clientId) {
-  // Demo mode: render the app without Auth0 so the UI is visible for demos.
-  // In production, set `VITE_AUTH0_DOMAIN` and `VITE_AUTH0_CLIENT_ID` as env vars.
-  console.warn('Auth0 not configured — running in demo mode (no auth).')
-  createRoot(document.getElementById('root')!).render(
+  createRoot(root).render(
     <StrictMode>
-      <App />
+      <div className="auth-error">
+        Auth0 is not configured. Please set `VITE_AUTH0_DOMAIN` and `VITE_AUTH0_CLIENT_ID`.
+      </div>
     </StrictMode>,
   )
 } else {
-  createRoot(document.getElementById('root')!).render(
+  createRoot(root).render(
     <StrictMode>
       <Auth0Provider
         domain={domain}
         clientId={clientId}
         authorizationParams={{
           redirect_uri: window.location.origin,
-          audience,
+          ...(audience ? { audience } : {}),
         }}
       >
         <App />

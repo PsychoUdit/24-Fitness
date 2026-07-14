@@ -39,21 +39,16 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className="contact-form">
-            <div className="form-group">
-              <input type="text" placeholder="Your Name" required />
-            </div>
-            <div className="form-group">
-              <input type="email" placeholder="Your Email" required />
-            </div>
-            <div className="form-group">
-              <input type="tel" placeholder="Phone Number" />
-            </div>
-            <div className="form-group">
-              <textarea placeholder="Your Message" rows={5} required></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">Send Message</button>
-          </form>
+          <iframe
+            src="https://tally.so/embed/ZjKvO0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="400"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Contact form"
+          />
         </div>
       </div>
     </section>
