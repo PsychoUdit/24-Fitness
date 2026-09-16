@@ -3,8 +3,8 @@ import { siteConfig } from '../config/siteConfig'
 
 const links = [
   { href: '#classes', label: 'Classes' },
-  { href: '#pricing', label: 'Pricing' },
   { href: '#schedule', label: 'Schedule' },
+  { href: '#pricing', label: 'Pricing' },
   { href: '#contact', label: 'Contact' },
 ]
 
