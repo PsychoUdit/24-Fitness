@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { site } from '../config/site.ts'
+import { siteConfig } from '../config/siteConfig'
 
 const links = [
   { href: '#classes', label: 'Classes' },
@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="container nav-inner">
         <a href="#home" className="brand" onClick={() => setOpen(false)}>
           <span className="brand-24">24</span>
-          <span className="brand-name">{site.brand.name.toUpperCase()}</span>
+          <span className="brand-name">{siteConfig.brand.name.toUpperCase()}</span>
         </a>
 
         <nav className={`nav-links ${open ? 'open' : ''}`}>
@@ -34,7 +34,7 @@ export default function Navbar() {
             </a>
           ))}
           <a href="#trial" className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
-            {site.trial.ctaLabel}
+            {siteConfig.trial.ctaLabel}
           </a>
         </nav>
 

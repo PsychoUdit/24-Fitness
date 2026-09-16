@@ -1,14 +1,15 @@
 {
   "business": {
-    "name": "24-Fitness",
-    "tagline": "Transform Your Body, Transform Your Life",
-    "phone": "+91 98765 43210",
-    "whatsapp": "919876543210",
+    "name": "24 Fitness",
+    "fullName": "24 Fitness Gym & Health Center",
+    "tagline": "PIPLIYAHANA · INDORE",
+    "phone": "+91 62651 19262",
+    "whatsapp": "916265119262",
     "instagramHandle": "24fitnessgymofficial",
-    "instagramUrl": "https://www.instagram.com/24fitnessgymofficial/",
-    "address": "Opp. City Mall, Main Market Road, City Center",
-    "city": "Your City, State - 110001",
-    "mapsQuery": "24-Fitness Gym Opp. City Mall Main Market Road",
+    "instagramUrl": "https://instagram.com/24fitnessgymofficial",
+    "address": "Sampat Vihar, near Zodiac Mall, Scheme No. 140, Pipliyahana, Indore – 452016",
+    "city": "Indore, MP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=24%20Fitness%20Gym%2C%20Sampat%20Vihar%2C%20Scheme%20No.%20140%2C%20Pipliyahana%2C%20Indore",
     "hours": {
       "floor": "Open 24/7, 365 Days",
       "staff": "Mon – Sat: 6:00 AM – 10:00 PM",
@@ -31,10 +32,10 @@
       "Top Commercial Equipment"
     ],
     "stats": [
-      { "value": "24/7", "label": "Gym Access" },
-      { "value": "500+", "label": "Active Members" },
-      { "value": "4.9 ★", "label": "Member Rating" },
-      { "value": "₹0", "label": "First Trial Visit" }
+      { "value": 24, "suffix": "/7", "label": "Gym Access" },
+      { "value": 500, "suffix": "+", "label": "Active Members" },
+      { "value": 4.9, "decimals": 1, "suffix": "★", "label": "Member Rating" },
+      { "value": 0, "suffix": "₹", "label": "First Trial Visit" }
     ]
   },
   "about": {
@@ -238,7 +239,7 @@
   "socialProof": {
     "tag": "Real Member Stories",
     "title": "Loved by Serious Lifters & Beginners Alike",
-    "ratingValue": "4.9 / 5.0",
+    "ratingValue": "4.9",
     "reviewCount": "180+ member reviews",
     "instagramTitle": "Join 240+ Members in Our Fitness Community",
     "instagramDesc": "Follow daily workout clips, member transformations, and motivation.",
@@ -265,5 +266,9 @@
         "tag": "Hypertrophy & Powerlifting"
       }
     ]
+  },
+  "footer": {
+    "copyrightName": "24 Fitness Gym & Health Center",
+    "madeIn": "Indore"
   }
 }

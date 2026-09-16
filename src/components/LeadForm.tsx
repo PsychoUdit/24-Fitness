@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { MessageCircle } from 'lucide-react'
-import { site } from '../config/site.ts'
+import { siteConfig } from '../config/siteConfig'
 
 const timeSlots = ['No preference', 'Morning', 'Afternoon', 'Evening']
 
@@ -13,13 +13,13 @@ export default function LeadForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     const message = [
-      `Hi ${site.brand.name}! I'd like ${site.trial.confirmed ? 'a free trial class' : 'to know more about the gym'}.`,
+      `Hi ${siteConfig.brand.name}! I'd like a free trial class.`,
       ``,
       `Name: ${name}`,
       `Phone: ${phone}`,
       `Preferred time: ${time}`,
     ].join('\n')
-    const url = `https://wa.me/${site.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank', 'noopener,noreferrer')
     setSent(true)
   }
@@ -29,7 +29,7 @@ export default function LeadForm() {
       <div className="container">
         <p className="section-kicker">Start here</p>
         <h2 className="section-title" data-reveal>
-          {site.trial.confirmed ? site.trial.ctaLabel : 'Talk to the gym on WhatsApp'}
+          {siteConfig.trial.ctaLabel}
         </h2>
 
         <div className="lead-wrap" data-reveal>
@@ -37,10 +37,10 @@ export default function LeadForm() {
             <div className="form-success">
               <h3>Opening WhatsApp…</h3>
               <p>
-                If WhatsApp didn't open, tap the button below and send the message yourself. {site.leads.replyNote}.
+                If WhatsApp didn't open, tap the button below and send the message yourself. The gym replies on WhatsApp.
               </p>
               <a
-                href={`https://wa.me/${site.contact.whatsappNumber}`}
+                href={`https://wa.me/${siteConfig.contact.whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"
@@ -99,7 +99,7 @@ export default function LeadForm() {
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-lg">
-                  {site.trial.ctaLabel}
+                  {siteConfig.trial.ctaLabel}
                 </button>
               </form>
               <p className="lead-note">

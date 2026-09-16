@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform, useInView, animate } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import { MessageCircle } from 'lucide-react'
-import { site, type Stat } from '../config/site.ts'
+import { siteConfig, type Stat } from '../config/siteConfig'
 
 function CountUp({ stat }: { stat: Stat }) {
   const ref = useRef<HTMLSpanElement>(null)
@@ -30,7 +30,7 @@ function CountUp({ stat }: { stat: Stat }) {
 }
 
 function waLink(message: string) {
-  return `https://wa.me/${site.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
+  return `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
 }
 
 export default function Hero() {
@@ -62,11 +62,11 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <span className="badge-pulse" />
-          <span>{site.hero.badge}</span>
+          <span>{siteConfig.hero.badge}</span>
         </motion.span>
 
         <h1 className="hero-title">
-          {site.hero.headline.map((line, idx) => (
+          {siteConfig.hero.headline.map((line, idx) => (
             <span key={idx} className="hero-line">
               <motion.span
                 className="hero-line-inner"
@@ -86,7 +86,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.75, ease: 'easeOut' }}
         >
-          {site.hero.desc}
+          {siteConfig.hero.desc}
         </motion.p>
 
         <motion.div
@@ -96,7 +96,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.9, ease: 'easeOut' }}
         >
           <a href="#trial" className="btn btn-primary hover-3d-lift">
-            {site.trial.ctaLabel}
+            {siteConfig.trial.ctaLabel}
           </a>
           <a
             href={waLink('Hi 24 Fitness, I have a question about membership.')}
@@ -115,7 +115,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1, z: 0 }}
           transition={{ duration: 1, delay: 1.1, ease: 'easeOut' }}
         >
-          {site.hero.stats.map((stat) => (
+          {siteConfig.hero.stats.map((stat) => (
             <div key={stat.label} className="stat hover-3d-lift" style={{ transformStyle: 'preserve-3d' }}>
               <span className="stat-number" style={{ transform: 'translateZ(15px)' }}>
                 <CountUp stat={stat} />

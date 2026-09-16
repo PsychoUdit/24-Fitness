@@ -1,6 +1,6 @@
 import { MessageCircle } from 'lucide-react'
 import InstagramIcon from './InstagramIcon.tsx'
-import { site } from '../config/site.ts'
+import { siteConfig } from '../config/siteConfig'
 
 const footerLinks = [
   { href: '#classes', label: 'Classes' },
@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <a href="#home" className="brand">
           <span className="brand-24">24</span>
-          <span className="brand-name">{site.brand.name.toUpperCase()}</span>
+          <span className="brand-name">{siteConfig.brand.name.toUpperCase()}</span>
         </a>
 
         <nav className="footer-links">
@@ -27,9 +27,9 @@ export default function Footer() {
         </nav>
 
         <div className="social-row">
-          {site.contact.instagramUrl && (
+          {siteConfig.contact.instagramUrl && (
             <a
-              href={site.contact.instagramUrl}
+              href={siteConfig.contact.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -38,7 +38,7 @@ export default function Footer() {
             </a>
           )}
           <a
-            href={`https://wa.me/${site.contact.whatsappNumber}`}
+            href={`https://wa.me/${siteConfig.contact.whatsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <p className="footer-bottom">
-          © {new Date().getFullYear()} {site.footer.copyrightName} · {site.footer.madeIn}
+          © {new Date().getFullYear()} {siteConfig.footer.copyrightName} · {siteConfig.footer.madeIn}
         </p>
       </div>
     </footer>

@@ -1,15 +1,12 @@
 import { Clock, MapPin, MessageCircle, Phone } from 'lucide-react'
 import InstagramIcon from './InstagramIcon.tsx'
-import { site } from '../config/site.ts'
+import { siteConfig } from '../config/siteConfig'
 
 function waLink(message: string) {
-  return `https://wa.me/${site.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
+  return `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
 }
 
 export default function Location() {
-  const hoursOpen = site.hours.confirmed && site.hours.label
-  const hoursText = hoursOpen ? site.hours.label : 'Opening hours — ask on WhatsApp'
-
   return (
     <section id="location" className="section">
       <div className="container">
@@ -22,15 +19,15 @@ export default function Location() {
             <h3>Address</h3>
             <div className="location-line">
               <MapPin size={18} />
-              <span>{site.contact.address}</span>
+              <span>{siteConfig.contact.address}</span>
             </div>
             <div className="location-actions">
-              <a href={site.contact.mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
+              <a href={siteConfig.contact.mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
                 Get directions
               </a>
-              {site.contact.instagramUrl && (
+              {siteConfig.contact.instagramUrl && (
                 <a
-                  href={site.contact.instagramUrl}
+                  href={siteConfig.contact.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-outline btn-sm"
@@ -46,12 +43,15 @@ export default function Location() {
             <h3>Hours &amp; contact</h3>
             <div className="location-line">
               <Clock size={18} />
-              <span>{hoursText}</span>
+              <span>{siteConfig.hours.floor}</span>
+            </div>
+            <div className="location-line" style={{ fontSize: '0.85em', opacity: 0.8 }}>
+              <span style={{ marginLeft: 26 }}>Staff: {siteConfig.hours.staff}</span>
             </div>
             <div className="location-line">
               <Phone size={18} />
-              <a href={`tel:${site.contact.phoneTel}`} style={{ color: 'inherit' }}>
-                {site.contact.phoneDisplay}
+              <a href={`tel:${siteConfig.contact.phoneTel}`} style={{ color: 'inherit' }}>
+                {siteConfig.contact.phoneDisplay}
               </a>
             </div>
             <div className="location-line">

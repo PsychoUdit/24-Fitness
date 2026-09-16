@@ -1,29 +1,34 @@
 import { Check, MessageCircle } from 'lucide-react'
-import { site } from '../config/site.ts'
+import { siteConfig } from '../config/siteConfig'
 
 function waLink(message: string) {
-  return `https://wa.me/${site.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
+  return `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
 }
 
 export default function Pricing() {
-  const { confirmed, plans } = site.pricing
+  const { plans } = siteConfig.pricing
 
   return (
     <section id="pricing" className="section">
       <div className="container">
-        <p className="section-kicker">Membership</p>
+        <p className="section-kicker">{siteConfig.pricing.tag}</p>
         <h2 className="section-title" data-reveal>
-          Plans &amp; pricing
+          {siteConfig.pricing.title}
         </h2>
+        <p className="section-subtitle" data-reveal>
+          {siteConfig.pricing.subtitle}
+        </p>
 
-        {confirmed && plans.length > 0 ? (
+        {plans.length > 0 ? (
           <div className="card-grid pricing-grid" data-reveal>
             {plans.map((plan) => (
-              <div className="card plan-card" key={plan.name}>
+              <div className={`card plan-card ${plan.popular ? 'plan-popular' : ''}`} key={plan.name}>
+                {plan.popular && <div className="plan-popular-badge">Most Popular</div>}
                 <h3 className="plan-name">{plan.name}</h3>
                 <p className="plan-price">
-                  {plan.price}
+                  {plan.price} <span className="plan-period">{plan.period}</span>
                 </p>
+                <p className="plan-tagline">{plan.tagline}</p>
                 <ul className="plan-features">
                   {plan.features.map((feature) => (
                     <li key={feature}>
@@ -33,7 +38,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <a href="#trial" className="btn btn-primary">
-                  {site.trial.ctaLabel}
+                  {siteConfig.trial.ctaLabel}
                 </a>
               </div>
             ))}
@@ -55,6 +60,10 @@ export default function Pricing() {
             </a>
           </div>
         )}
+
+        <p className="pricing-guarantee" data-reveal>
+          {siteConfig.pricing.guarantee}
+        </p>
       </div>
     </section>
   )
