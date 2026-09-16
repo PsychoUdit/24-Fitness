@@ -1,79 +1,60 @@
-const plans = [
-  {
-    name: 'Basic',
-    price: '29',
-    period: '/month',
-    features: [
-      'Gym access 5am-10pm',
-      'Basic equipment',
-      'Locker room access',
-      'Free Wi-Fi',
-    ],
-    highlighted: false,
-  },
-  {
-    name: 'Standard',
-    price: '49',
-    period: '/month',
-    features: [
-      '24/7 gym access',
-      'All equipment',
-      'Group classes',
-      'Locker & shower',
-      '1 free PT session',
-      'Sauna access',
-    ],
-    highlighted: true,
-  },
-  {
-    name: 'Premium',
-    price: '79',
-    period: '/month',
-    features: [
-      '24/7 unlimited access',
-      'All equipment & classes',
-      '8 PT sessions/month',
-      'Locker, shower & sauna',
-      'Nutrition plan',
-      'Free guest pass',
-      'Priority booking',
-    ],
-    highlighted: false,
-  },
-]
+import { Check, MessageCircle } from 'lucide-react'
+import { site } from '../config/site.ts'
+
+function waLink(message: string) {
+  return `https://wa.me/${site.contact.whatsappNumber}?text=${encodeURIComponent(message)}`
+}
 
 export default function Pricing() {
-  return (
-    <section id="pricing" className="pricing-section">
-      <div className="container">
-        <h2 className="section-title">Choose Your Plan</h2>
-        <p className="section-subtitle">
-          Flexible membership options designed to fit your lifestyle and budget.
-        </p>
+  const { confirmed, plans } = site.pricing
 
-        <div className="pricing-grid">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`pricing-card ${plan.highlighted ? 'highlighted' : ''}`}
-            >
-              {plan.highlighted && <span className="popular-badge">Most Popular</span>}
-              <h3 className="plan-name">{plan.name}</h3>
-              <div className="plan-price">
-                <span className="price">${plan.price}</span>
-                <span className="period">{plan.period}</span>
+  return (
+    <section id="pricing" className="section">
+      <div className="container">
+        <p className="section-kicker">Membership</p>
+        <h2 className="section-title" data-reveal>
+          Plans &amp; pricing
+        </h2>
+
+        {confirmed && plans.length > 0 ? (
+          <div className="card-grid pricing-grid" data-reveal>
+            {plans.map((plan) => (
+              <div className="card plan-card" key={plan.name}>
+                <h3 className="plan-name">{plan.name}</h3>
+                <p className="plan-price">
+                  {plan.price}
+                </p>
+                <ul className="plan-features">
+                  {plan.features.map((feature) => (
+                    <li key={feature}>
+                      <Check size={15} />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#trial" className="btn btn-primary">
+                  {site.trial.ctaLabel}
+                </a>
               </div>
-              <ul className="plan-features">
-                {plan.features.map((f) => (
-                  <li key={f}>✓ {f}</li>
-                ))}
-              </ul>
-              <a href="#contact" className={`btn ${plan.highlighted ? 'btn-primary' : 'btn-dark'}`}>
-                Get Started
-              </a>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className="pricing-neutral" data-reveal>
+            <p>
+              Membership prices and current plans — message us on WhatsApp and we'll tell you exactly what's
+              available right now.
+            </p>
+            <a
+              href={waLink('Hi 24 Fitness, want to know your membership plans and prices.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+            >
+              <MessageCircle size={18} />
+              Ask about prices on WhatsApp
+            </a>
+          </div>
+        )}
       </div>
     </section>
   )

@@ -1,0 +1,269 @@
+{
+  "business": {
+    "name": "24-Fitness",
+    "tagline": "Transform Your Body, Transform Your Life",
+    "phone": "+91 98765 43210",
+    "whatsapp": "919876543210",
+    "instagramHandle": "24fitnessgymofficial",
+    "instagramUrl": "https://www.instagram.com/24fitnessgymofficial/",
+    "address": "Opp. City Mall, Main Market Road, City Center",
+    "city": "Your City, State - 110001",
+    "mapsQuery": "24-Fitness Gym Opp. City Mall Main Market Road",
+    "hours": {
+      "floor": "Open 24/7, 365 Days",
+      "staff": "Mon – Sat: 6:00 AM – 10:00 PM",
+      "summary": "Open 24 Hours / 7 Days a Week"
+    },
+    "offer": "1-Day Free Trial Pass (Zero Commitment)"
+  },
+  "hero": {
+    "badge": "Exclusive Welcome Offer: Free 1-Day Pass",
+    "titlePrefix": "Train on Your Schedule at",
+    "titleHighlight": "24-Fitness",
+    "description": "Break through your limits in a fully-equipped 24/7 gym. Whether you want to drop body fat, pack on muscle, or stay active, your journey starts with a free, no-commitment workout.",
+    "primaryCta": "Claim Your Free Trial Pass",
+    "secondaryCta": "View Membership Plans",
+    "microCopy": "Takes 30 seconds • No payment details needed • Instant WhatsApp booking",
+    "trustPoints": [
+      "Open 24 Hours / 7 Days",
+      "Free 1-Day Trial Class",
+      "Certified Fitness Coaches",
+      "Top Commercial Equipment"
+    ],
+    "stats": [
+      { "value": "24/7", "label": "Gym Access" },
+      { "value": "500+", "label": "Active Members" },
+      { "value": "4.9 ★", "label": "Member Rating" },
+      { "value": "₹0", "label": "First Trial Visit" }
+    ]
+  },
+  "about": {
+    "tag": "Why 24-Fitness",
+    "title": "Built for Real Workouts. No Fluff.",
+    "subtitle": "We provide everything you need to reach peak fitness without gimmicks or rigid hour limits.",
+    "benefits": [
+      {
+        "id": "247-access",
+        "title": "Open 24 Hours, 7 Days a Week",
+        "desc": "Never worry about gym timings again. Early morning cardio or late midnight lifting — your biometric pass lets you workout anytime."
+      },
+      {
+        "id": "equipment",
+        "title": "Commercial Heavy Equipment",
+        "desc": "Heavy-duty power cages, Olympic barbells, complete dumbbell pairs up to 50kg, and ergonomic cable selectorized machines."
+      },
+      {
+        "id": "coaching",
+        "title": "Certified Floor Trainers",
+        "desc": "Floor trainers are on deck to correct posture, demonstrate proper form, and prevent injury — without upfront personal training pressure."
+      },
+      {
+        "id": "classes",
+        "title": "High-Energy Group Classes",
+        "desc": "Join HIIT, Functional Cardio, Strength Circuits, and Core blast sessions designed to burn fat and build stamina."
+      },
+      {
+        "id": "hygiene",
+        "title": "Clean & Well-Maintained",
+        "desc": "Strict hygiene protocols, sanitized equipment, high-volume air conditioning, and clean locker and shower rooms."
+      },
+      {
+        "id": "community",
+        "title": "Friendly, Zero-Ego Community",
+        "desc": "Whether it is your very first workout or your 500th, you will find supportive members and coaches ready to spot you."
+      }
+    ],
+    "ctaBox": {
+      "title": "Want to try the machines before deciding?",
+      "subtitle": "Walk in today with a 1-day complimentary guest pass.",
+      "buttonText": "Book Free Trial Pass"
+    }
+  },
+  "classes": {
+    "tag": "Group Workouts",
+    "title": "Trainer-Led Class Sessions",
+    "subtitle": "Every membership includes access to open gym floor and scheduled classes. Join any session.",
+    "categories": ["All", "Strength", "Cardio & HIIT", "Flexibility"],
+    "items": [
+      {
+        "title": "HIIT Fat Burner",
+        "desc": "Fast-paced circuit intervals combining kettlebells, sprints, and bodyweight movements for high calorie burn.",
+        "level": "All Levels",
+        "duration": "45 min",
+        "intensity": "High",
+        "category": "Cardio & HIIT"
+      },
+      {
+        "title": "Power & Hypertrophy",
+        "desc": "Structured barbell & dumbbell lifting targeting major muscle groups for size, strength, and bone density.",
+        "level": "Intermediate+",
+        "duration": "60 min",
+        "intensity": "High",
+        "category": "Strength"
+      },
+      {
+        "title": "Boxing Conditioning",
+        "desc": "Heavy bag drills, combinations, footwork, and core intervals to build cardiovascular resilience and agility.",
+        "level": "Beginner Friendly",
+        "duration": "50 min",
+        "intensity": "Medium-High",
+        "category": "Cardio & HIIT"
+      },
+      {
+        "title": "Power Spin / RPM",
+        "desc": "High-cadence stationary cycling simulation with climbing intervals and music-driven sprints.",
+        "level": "All Levels",
+        "duration": "45 min",
+        "intensity": "Medium-High",
+        "category": "Cardio & HIIT"
+      },
+      {
+        "title": "Core & Mobility Yoga",
+        "desc": "Deep functional stretching and isometric core holds to improve flexibility, posture, and recovery.",
+        "level": "All Levels",
+        "duration": "60 min",
+        "intensity": "Moderate",
+        "category": "Flexibility"
+      },
+      {
+        "title": "Functional Circuit",
+        "desc": "Battle ropes, plyo boxes, sled pushes, and medicine ball slams to prepare your body for everyday athletic demands.",
+        "level": "All Levels",
+        "duration": "50 min",
+        "intensity": "High",
+        "category": "Strength"
+      }
+    ]
+  },
+  "schedule": {
+    "tag": "Weekly Timetable",
+    "title": "Flexible Class Schedule",
+    "subtitle": "Open gym floor is accessible 24/7. Classes run throughout the week as scheduled below.",
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "timetable": {
+      "Mon": [
+        { "time": "06:30 AM", "name": "HIIT Fat Burner", "trainer": "Coach Rohit", "category": "Cardio" },
+        { "time": "08:00 AM", "name": "Core & Mobility Yoga", "trainer": "Coach Ananya", "category": "Yoga" },
+        { "time": "05:30 PM", "name": "Power & Hypertrophy", "trainer": "Coach Vikram", "category": "Strength" },
+        { "time": "07:00 PM", "name": "Functional Circuit", "trainer": "Coach Rohit", "category": "Strength" }
+      ],
+      "Tue": [
+        { "time": "06:30 AM", "name": "Power Spin / RPM", "trainer": "Coach Sneha", "category": "Cardio" },
+        { "time": "08:00 AM", "name": "Power & Hypertrophy", "trainer": "Coach Vikram", "category": "Strength" },
+        { "time": "05:30 PM", "name": "Boxing Conditioning", "trainer": "Coach Karan", "category": "Boxing" },
+        { "time": "07:00 PM", "name": "HIIT Fat Burner", "trainer": "Coach Rohit", "category": "Cardio" }
+      ],
+      "Wed": [
+        { "time": "06:30 AM", "name": "HIIT Fat Burner", "trainer": "Coach Rohit", "category": "Cardio" },
+        { "time": "08:00 AM", "name": "Core & Mobility Yoga", "trainer": "Coach Ananya", "category": "Yoga" },
+        { "time": "05:30 PM", "name": "Power & Hypertrophy", "trainer": "Coach Vikram", "category": "Strength" },
+        { "time": "07:00 PM", "name": "Power Spin / RPM", "trainer": "Coach Sneha", "category": "Cardio" }
+      ],
+      "Thu": [
+        { "time": "06:30 AM", "name": "Functional Circuit", "trainer": "Coach Rohit", "category": "Strength" },
+        { "time": "08:00 AM", "name": "Power Spin / RPM", "trainer": "Coach Sneha", "category": "Cardio" },
+        { "time": "05:30 PM", "name": "Boxing Conditioning", "trainer": "Coach Karan", "category": "Boxing" },
+        { "time": "07:00 PM", "name": "Core & Mobility Yoga", "trainer": "Coach Ananya", "category": "Yoga" }
+      ],
+      "Fri": [
+        { "time": "06:30 AM", "name": "Power & Hypertrophy", "trainer": "Coach Vikram", "category": "Strength" },
+        { "time": "08:00 AM", "name": "HIIT Fat Burner", "trainer": "Coach Rohit", "category": "Cardio" },
+        { "time": "05:30 PM", "name": "Functional Circuit", "trainer": "Coach Rohit", "category": "Strength" },
+        { "time": "07:00 PM", "name": "Boxing Conditioning", "trainer": "Coach Karan", "category": "Boxing" }
+      ],
+      "Sat": [
+        { "time": "08:00 AM", "name": "Weekend Warrior BootCamp", "trainer": "Coach Vikram", "category": "Cardio" },
+        { "time": "10:00 AM", "name": "Power Spin / RPM", "trainer": "Coach Sneha", "category": "Cardio" },
+        { "time": "05:00 PM", "name": "Open Sparring & Core", "trainer": "Coach Karan", "category": "Boxing" }
+      ],
+      "Sun": [
+        { "time": "08:30 AM", "name": "Restorative Stretch & Mobility", "trainer": "Coach Ananya", "category": "Yoga" },
+        { "time": "10:30 AM", "name": "Heavy Lifting Open Gym", "trainer": "Floor Coach", "category": "Strength" }
+      ]
+    },
+    "floorNote": "Prefer solo workouts? The main gym floor, free weights, and cardio deck are open 24 hours with uninterrupted access."
+  },
+  "pricing": {
+    "tag": "Simple & Transparent",
+    "title": "Membership Plans That Fit Your Routine",
+    "subtitle": "No hidden admission fees. Start with a 1-day free trial, then pick the plan that suits you.",
+    "plans": [
+      {
+        "name": "1-Month Standard",
+        "price": "₹1,499",
+        "period": "/ month",
+        "tagline": "Ideal for getting started with zero long-term commitment.",
+        "popular": false,
+        "features": [
+          "24/7 Access to Gym Floor",
+          "Free Weights & Cardio Deck",
+          "Locker & Shower Facility",
+          "Initial Trainer Assessment",
+          "No Registration Fee"
+        ]
+      },
+      {
+        "name": "3-Month Popular",
+        "price": "₹3,799",
+        "period": "/ 3 months",
+        "tagline": "Best for building consistent workout habits and fat loss.",
+        "popular": true,
+        "features": [
+          "24/7 Unlimited Access",
+          "All Strength & Cardio Equipment",
+          "Access to All Group Classes",
+          "Locker, Shower & Steam",
+          "Monthly Body Composition Scan",
+          "Complimentary Diet Consultation"
+        ]
+      },
+      {
+        "name": "12-Month VIP Annual",
+        "price": "₹11,999",
+        "period": "/ year",
+        "tagline": "Maximum savings for dedicated fitness enthusiasts (₹999/mo).",
+        "popular": false,
+        "features": [
+          "24/7 Year-Round VIP Access",
+          "All Equipment & Unlimited Classes",
+          "2 Free Guest Passes Every Month",
+          "Locker, Shower & Steam",
+          "Personal Workout & Diet Blueprint",
+          "Freeze Membership for up to 30 Days"
+        ]
+      }
+    ],
+    "guarantee": "Zero Pressure Policy: Payment is collected in-person at the gym front desk. Try the facility on a 1-day free guest pass first."
+  },
+  "socialProof": {
+    "tag": "Real Member Stories",
+    "title": "Loved by Serious Lifters & Beginners Alike",
+    "ratingValue": "4.9 / 5.0",
+    "reviewCount": "180+ member reviews",
+    "instagramTitle": "Join 240+ Members in Our Fitness Community",
+    "instagramDesc": "Follow daily workout clips, member transformations, and motivation.",
+    "testimonials": [
+      {
+        "name": "Vikram Singh",
+        "achievement": "Lost 12 kg in 4 months",
+        "rating": 5,
+        "quote": "The 24/7 access is a game changer for my night shift schedule. The trainers actually guide your form instead of pushing unnecessary personal training packages.",
+        "tag": "Strength & Conditioning"
+      },
+      {
+        "name": "Pooja Mehta",
+        "achievement": "Regular for 1.5 years",
+        "rating": 5,
+        "quote": "Best equipment in the area. Very clean environment, great ventilation, and the crowd is respectful. Started with the 1-day free trial and never left.",
+        "tag": "Fat Loss & HIIT"
+      },
+      {
+        "name": "Aman Verma",
+        "achievement": "Gained 7 kg lean muscle",
+        "rating": 5,
+        "quote": "Top-notch heavy dumbbells and squat racks. If you are serious about lifting or bodybuilding, this is the only gym worth your time here.",
+        "tag": "Hypertrophy & Powerlifting"
+      }
+    ]
+  }
+}
