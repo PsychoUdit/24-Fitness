@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Home from './pages/Home.tsx'
-import './App.css'
+import './App.css';
+import './sections.css';
 
 export default function App() {
   useEffect(() => {

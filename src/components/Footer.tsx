@@ -5,8 +5,8 @@ import { siteConfig } from '../config/siteConfig'
 const footerLinks = [
   { href: '#classes', label: 'Classes' },
   { href: '#pricing', label: 'Pricing' },
-  { href: '#location', label: 'Location' },
-  { href: '#trial', label: 'Book a trial' },
+  { href: '#schedule', label: 'Schedule' },
+  { href: '#contact', label: 'Contact' },
 ]
 
 export default function Footer() {

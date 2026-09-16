@@ -37,7 +37,7 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <a href="#trial" className="btn btn-primary">
+                <a href="#contact" className="btn btn-primary">
                   {siteConfig.trial.ctaLabel}
                 </a>
               </div>

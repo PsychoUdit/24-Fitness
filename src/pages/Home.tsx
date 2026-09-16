@@ -5,11 +5,8 @@ import About from '../components/About.tsx'
 import Classes from '../components/Classes.tsx'
 import Schedule from '../components/Schedule.tsx'
 import Pricing from '../components/Pricing.tsx'
-import Testimonials from '../components/Testimonials.tsx'
 import SocialProof from '../components/SocialProof.tsx'
-import Location from '../components/Location.tsx'
 import Contact from '../components/Contact.tsx'
-import LeadForm from '../components/LeadForm.tsx'
 import Footer from '../components/Footer.tsx'
 import BackToTop from '../components/BackToTop.tsx'
 import FloatingWhatsApp from '../components/FloatingWhatsApp.tsx'
@@ -33,11 +30,8 @@ export default function Home() {
         <Classes />
         <Schedule onOpenModal={openModal} />
         <Pricing />
-        <Testimonials />
         <SocialProof onOpenModal={() => openModal()} />
-        <Location />
         <Contact />
-        <LeadForm />
       </main>
       <Footer />
       <BackToTop />

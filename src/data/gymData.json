@@ -35,7 +35,7 @@
       { "value": 24, "suffix": "/7", "label": "Gym Access" },
       { "value": 500, "suffix": "+", "label": "Active Members" },
       { "value": 4.9, "decimals": 1, "suffix": "★", "label": "Member Rating" },
-      { "value": 0, "suffix": "₹", "label": "First Trial Visit" }
+      { "value": 100, "suffix": "%", "label": "Free Trial Visit" }
     ]
   },
   "about": {

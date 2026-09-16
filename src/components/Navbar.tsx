@@ -4,8 +4,8 @@ import { siteConfig } from '../config/siteConfig'
 const links = [
   { href: '#classes', label: 'Classes' },
   { href: '#pricing', label: 'Pricing' },
-  { href: '#reviews', label: 'Reviews' },
-  { href: '#location', label: 'Location' },
+  { href: '#schedule', label: 'Schedule' },
+  { href: '#contact', label: 'Contact' },
 ]
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#trial" className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
+          <a href="#contact" className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
             {siteConfig.trial.ctaLabel}
           </a>
         </nav>

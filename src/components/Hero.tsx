@@ -95,7 +95,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9, ease: 'easeOut' }}
         >
-          <a href="#trial" className="btn btn-primary hover-3d-lift">
+          <a href="#contact" className="btn btn-primary hover-3d-lift">
             {siteConfig.trial.ctaLabel}
           </a>
           <a
